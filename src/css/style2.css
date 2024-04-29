@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.navbar-style{
+    box-shadow: 0 5px 10px;
+}
+.logo{
+    height: 150px;
+    
+}
+.titulo{
+
+    font-size: 92px !important;
+    text-shadow:0 5px 5px;
+    
+}
+.lista{
+    color:white;
+}
+
+.principal{
+    min-height: 100vh;
+    background: linear-gradient(rgba(5,7,12,.75),rgba(5,7,12,.75)), url("../img/show/sonrisa.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.doctores{
+    position:relative;
+}
+
+.especialidad{
+    position:relative;
+    top: 50px;
+    height: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    border: 3px solid;
+}
+.doctor img{
+    width: 300px;
+    height: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    border: 3px solid;
+    cursor: pointer;
+}
+
+.doctor img:hover{
+    width: 320px;
+    height: 280px;
+}
+/* .mapa {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    width: 90%;
+    justify-content: space-evenly; 
+    align-items: center; 
+    height: 50vh;
+}*/
+
+#map{
+    height: 300px;
+    width :400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+  
+} 
+
+.txmap{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: larger; 
+  
+}
+

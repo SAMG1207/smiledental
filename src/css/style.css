@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* POP-UP_______________________________________________________________________________________________________________________________ */
+.top-image{
+    border-radius: 20px;
+    max-width: 500px;
+    float:left;
+    border: 3px solid;
+    margin-right: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+}
+
+.pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    display:none;
+}
+
+.pop-box {
+    background-image: url('../img/popup.jpg');
+    background-size: contain;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: row; /* Cambiar a dirección de fila para que el formulario esté a la derecha */
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    z-index: 11;
+}
+
+.pop-content {
+    width: 45%; /* Establecer el ancho del contenido a la mitad */
+    padding: 20px; /* Añadir algún espacio al contenido */
+    margin-top: 8%;
+    margin-left: 52%;
+}
+
+
+.close{
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    width:40px;
+    height: 40px;
+    background: #f3f3f3 url(../img/close.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.input {
+    margin-top: 10px;
+}
+
+.pop-content input[type="submit"]{
+width: 150px;
+background-color: rgba(75, 75, 228, 0.956);
+font-size: large;
+border-radius: 5px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+cursor: pointer;
+}
+
+.pop-layout{
+    background-color: rgba(0, 0, 0, 0.451);
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position:fixed;
+    z-index: -1;
+}
+/* HEADER_________________________________________________________________________________________________________________________________________ */
+.above{
+    text-align: center;
+    padding: 2.2rem;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.764);
+    color: white;
+    font-size: larger;
+}
+.itself{
+    position: relative;
+    height: 235px;
+    background-size: 100%; 
+    isolation: isolate;
+   
+    display: flex;
+    align-items: center;
+}
+
+.itself::after{
+content:'';
+position:absolute;
+background: rgb(252, 182, 194);
+inset: 0;
+z-index: -1;
+opacity: .8;
+background-image: url(../img/show/dentista-sonrisa.jpg);
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+
+.itself *{
+    margin-top: 15px;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+}
+
+#logo{
+    margin-left: 50%;
+    height: 150px;
+}
+
+.side{
+    width: 40%;
+}
+
+.main{
+  
+    width:60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5rem;
+    display: inline-block;
+    padding-top: 3rem;
+}
+
+.art{
+    width: 100%;
+    padding: 2rem;
+}
+
+.art p{
+    justify-content: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size:large;
+    text-align: center;
+ 
+    margin: 0 auto;
+}
+/* MENU NAVEGADOR_____________________________________________________________________________________________________________________*/
+.navegador{
+    border: solid rgb(26, 25, 25) 3px;
+    height: 80px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.764);
+}
+
+
+.menu-horizontal{
+    margin:0 auto;
+    list-style: none;
+    width:60rem;
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-horizontal>li>a{
+ display: block;
+ color:white;
+ padding: 15px 20px;
+ text-decoration: none;
+ 
+    
+}
+
+.menu-horizontal > li:hover{
+    background-color: rgb(0, 98, 255);
+    
+
+}
+
+.menu-horizontal > li >a:hover {
+    color:rgb(255, 255, 255);
+}
+
+.menu-vertical{
+    position: absolute;
+    display:none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.764);
+    z-index: 1;
+  
+}
+
+.menu-horizontal li:hover .menu-vertical{
+   display: block;
+
+}
+
+.menu-vertical li:hover{
+    background-color:rgb(0, 98, 255);
+}
+
+.menu-vertical li a:hover{
+    color: rgb(255, 255, 255);
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
+
+/* ESPECIALIDADES________________________________________________________________________________________________________ */
+.wrapper{
+    position: relative;
+    height: 550px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    background-color:  white;;
+    margin:25px auto 0;
+    border-radius: 20px;
+    width: 90%;
+    top: 15px;
+}
+.box{
+    
+    position:absolute;
+    height: 550px;
+    width: 100%;
+    margin-top:0px;
+    flex-direction: row; 
+    align-items: center;
+
+}
+
+.container{
+    display: flex;
+}
+
+.image img{
+    position: absolute;
+    width: 550px;
+    height: 400px;
+    margin-left: 0px;
+    top: 10%;
+    border: 3px solid;
+    /* margin-right: 50px; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    max-width: 500px;
+}
+
+.texto{
+    position:absolute;
+    width: 53%;
+    height: 400px;
+    margin-left: 200px;
+    top: 10%;
+    left: 30%;
+}
+
+.texto h2{
+    position: relative;
+    text-align: center; 
+}   
+.visible{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.non-visible{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+/* EQUIPO________________________________________________________________________ */
+ .contain h2
+ { color: white;}
+.equipo {
+ 
+    border: 3px solid;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    margin:50px auto 0;
+    overflow: hidden;
+    width: 90%;
+    justify-content: space-around;
+    height: 300px;
+
+  }
+  .container-fade {
+    
+    position: relative;
+    display: inline-block; /* Change to inline-block to keep them inline */
+    margin: 10px; /* Add some margin for spacing between items */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    width: 33.3%;
+}
+
+.image-fade{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+.contain{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}
+
+.container-fade:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* MAPA_______________________________________________________________________________________________________________________________ */
+.mapa {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    width: 90%;
+    justify-content: space-evenly; 
+    align-items: center; 
+    height: 50vh; 
+    margin-bottom: 50px;
+}
+
+#map{
+    height: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}
+
+.txmap{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: larger; 
+  
+}
+
+.principal{
+    min-height: 100vh;
+    background: linear-gradient(rgba(5,7,12,.75),rgba(5,7,12,.75)), url("../img/show/sonrisa.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.tituloForm{
+    text-align: center;
+    border-bottom: #008CBA solid 3px;
+}
+.form{
+    border-radius: 20px;
+    position:relative;
+    top: 25px;
+    width:60%;
+    background-color: rgb(182, 172, 172);
+    padding:20px;
+    margin:0 auto;
+    opacity: 0;
+    transition: opacity 2s ease;
+    overflow: hidden;
+}
+
+
+input{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    overflow:unset;
+  }
+
+  .input{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  input[type="submit"]{
+    width:100px;
+    background-color:#008CBA;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    }
+.notInput *{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.icono-vc{
+    width:20px;
+    height: 20px;
+    top: 2px;
+  }
+  
+ .icono-vc:hover{
+    width:25px;
+    height: 25px;
+  }
+
+  /* ___________________mensaje----------------- */
+  .message {
+    display:none;
+    background: #f1f1f1;
+    color:black;
+    position:relative;
+    padding:10px;
+    margin-top: 10px;
+  }
+
+  .message p{
+    padding: 5px 8px;
+    font-size: 18px;
+  }
+ 
+ .valid{
+    color:green;
+  }
+
+  .invalid{
+    color:red;
+  }
+
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+  .txmap p{
+    color: white
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    width: 25%;
+    background-color: #fff; /* Color de fondo */
+    padding: 10px;
+    z-index: 1; /* Para que esté por encima del resto */
+}
+
+.dropdown-menu li:hover{
+   color: black !important;
+   background-color: white;
+}
+
+.shown img{
+    position: absolute;
+    left: 30%;
+    background: none;
+    width: 300px;
+    height: 300px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    max-width: 500px;
+}
+/* footer------------------------------------------------------------------------------------------------------------------------------------ */
+footer{
+  background-color: rgba(0, 0, 0, 0.764); 
+  height:300px ;
+  z-index: 999;
+  bottom: 0; /* Lo coloca en la parte inferior de la ventana */
+  left: 0; /* Lo coloca en la esquina izquierda */
+  width: 100%; 
+  display: flex;
+  justify-content: space-evenly; /* Aplicar espacio equitativo horizontal */
+  align-items: center;
+}
+footer > *{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    /* Cambios de estilo cuando el ancho de la pantalla es igual o menor a 768px */
+    #logo {
+        top: 50%; /* Centra verticalmente la imagen en la mitad de la pantalla */
+        left: 50%; /* Centra horizontalmente la imagen en la mitad de la pantalla */
+        transform: translate(-50%, -50%); /* Centra completamente la imagen */
+        max-width: 100%; /* Ajusta el ancho máximo de la imagen para que quepa en la pantalla */
+    }
+
+    .titulo {
+        text-align: center; /* Centra el título horizontalmente en la pantalla */
+        margin-top: 20px; /* Agrega espacio entre la imagen y el título */
+    }
+}
+

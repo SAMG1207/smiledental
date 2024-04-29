@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.principal{
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+    min-height: 100vh;
+    background: linear-gradient(rgba(5,7,12,.75),rgba(5,7,12,.75)), url("../img/show/sonrisa.jpg") no-repeat center center fixed;
+    background-size: cover;
+    z-index: 0;
+}
+.contenedor{
+    width:40%
+}
+
+.imagen{
+   
+    max-width: 100%;
+    height: auto;
+}
+
+#formulario{
+    display: flex;
+}
+
+
+#logo{
+    margin-left: 50%;
+    height: 150px;
+}
+
+.menu-horizontal{
+    margin:0 auto;
+    list-style: none;
+    width:60rem;
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-horizontal>li>a{
+ display: block;
+ color:white;
+ padding: 15px 20px;
+ text-decoration: none;
+ 
+    
+}
+
+.menu-horizontal > li:hover{
+    background-color: rgb(0, 98, 255);
+    
+
+}
+
+.menu-horizontal > li >a:hover {
+    color:rgb(255, 255, 255);
+}
+
+.menu-vertical{
+    position: absolute;
+    display:none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.764);
+    z-index: 1;
+  
+}
+
+.menu-horizontal li:hover .menu-vertical{
+   display: block;
+
+}
+
+.menu-vertical li:hover{
+    background-color:rgb(0, 98, 255);
+}
+
+.menu-vertical li a:hover{
+    color: rgb(255, 255, 255);
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
+
+.formulario{
+    position:relative;
+    margin-top: 100px;
+    background-color: beige;
+    overflow: none;
+}
+
+.input{
+    margin-top: 1rem;
+    display: block;
+    justify-content: center;
+}
+.input label{
+    display: inline-block;
+    width: 300px;}
+
+.row a{
+    text-decoration: none;
+    color: black;
+}
+
+ .table{
+    border-collapse: collapse;
+} 
+
+.icono-vc{
+    width:20px;
+    height: 20px;
+    top: 2px;
+  }
+  
+ .icono-vc:hover{
+    width:25px;
+    height: 25px;
+  }
+  #formulario{
+    position: absolute;
+    border-radius: 20px;
+    left: 25%;
+    top:10%;
+    z-index: 1;
+
+  }
+
+  .nuevo:hover{
+background-color: aquamarine;
+  }
+
+
+ .alert{
+    display: block;
+  }
+
+.non-alert{
+    display:none;
+  }
+
+  .visible{
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    height: auto;
+    z-index: 1;
+}
+.non-visible{
+    display:none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    height: 0px;
+    z-index: -1;
+}
+
+#ver{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%)
+}
+
+#contenedorTabla{
+    z-index: 1;
+  
+}
+#contenedorTabla thead{
+   background-color: rgb(107, 107, 236);
+}
+
+.navegador{
+    background-color: rgb(92, 159, 210);
+}
+
+#citasPorClientes {
+    margin: 0 auto !important;
+}
